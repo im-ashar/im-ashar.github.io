@@ -42,6 +42,7 @@ h6 {
   line-height: 0
 }
 
+
 .back-to-top:hover {
   background: #0678e3;
   color: #fff
@@ -119,6 +120,7 @@ h6 {
   }
 }
 
+
 .nav-menu {
   padding: 0;
   display: block
@@ -135,6 +137,7 @@ h6 {
   white-space: nowrap
 }
 
+.resume,
 .nav-menu a,
 .nav-menu a:focus {
   display: flex;
@@ -152,6 +155,7 @@ h6 {
   transition: .3s
 }
 
+.resume,
 .nav-menu a i,
 .nav-menu a:focus i {
   font-size: 20px
@@ -177,6 +181,9 @@ h6 {
   }
 }
 
+
+.resume,
+.resume:hover,
 .nav-menu .active,
 .nav-menu .active:focus,
 .nav-menu a:hover,
@@ -185,6 +192,19 @@ h6 {
   background: #0563bb
 }
 
+.resume{
+  display: inline-flex;
+  justify-content: center;
+  width: 9rem;
+  margin: 0;
+  margin-top: 1rem;
+}
+.resume>a{
+  color: #fff;
+}
+.resume:hover{
+  transform: scale(1.2);
+}
 .nav-menu .active span,
 .nav-menu .active:focus span,
 .nav-menu a:hover span,
@@ -192,11 +212,13 @@ h6 {
   color: #fff
 }
 
+
 .nav-menu a:hover,
 .nav-menu li:hover>a {
   width: 100%;
   color: #fff
 }
+
 
 .nav-menu a:hover span,
 .nav-menu li:hover>a span {
