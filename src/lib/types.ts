@@ -50,6 +50,15 @@ export interface Experience {
 	tech: string[];
 }
 
+export interface Education {
+	degree: string;
+	institution: string;
+	location?: string;
+	start: string;
+	end: string;
+	description?: string;
+}
+
 export interface UpworkStat {
 	label: string;
 	value: string;

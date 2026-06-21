@@ -7,35 +7,35 @@ export const skills: SkillCategory[] = [
 			{ name: 'C#', level: 95 },
 			{ name: 'TypeScript', level: 90 },
 			{ name: 'JavaScript', level: 92 },
-			{ name: 'SQL', level: 88 },
-			{ name: 'Python', level: 75 }
+			{ name: 'SQL', level: 90 },
+			{ name: 'HTML & CSS', level: 92 }
+		]
+	},
+	{
+		name: 'Backend & .NET',
+		skills: [
+			{ name: '.NET / ASP.NET Core', level: 95 },
+			{ name: '.NET Web API', level: 93 },
+			{ name: 'Blazor', level: 88 },
+			{ name: 'Entity Framework', level: 90 }
 		]
 	},
 	{
 		name: 'Frontend',
 		skills: [
-			{ name: 'Svelte / SvelteKit', level: 88 },
-			{ name: 'React', level: 85 },
-			{ name: 'Tailwind CSS', level: 92 },
-			{ name: 'HTML & CSS', level: 95 }
+			{ name: 'React', level: 90 },
+			{ name: 'Angular', level: 85 },
+			{ name: 'Blazor', level: 88 },
+			{ name: 'Svelte / SvelteKit', level: 80 }
 		]
 	},
 	{
-		name: 'Backend',
+		name: 'Cloud & DevOps',
 		skills: [
-			{ name: 'ASP.NET Core', level: 93 },
-			{ name: 'Node.js', level: 85 },
-			{ name: 'REST & GraphQL APIs', level: 88 },
-			{ name: 'Entity Framework', level: 90 }
-		]
-	},
-	{
-		name: 'Data & Cloud',
-		skills: [
-			{ name: 'SQL Server / PostgreSQL', level: 88 },
-			{ name: 'Azure', level: 80 },
-			{ name: 'Docker', level: 78 },
-			{ name: 'CI/CD', level: 80 }
+			{ name: 'Azure', level: 88 },
+			{ name: 'AWS', level: 82 },
+			{ name: 'Docker', level: 82 },
+			{ name: 'Git & CI/CD', level: 88 }
 		]
 	}
 ];

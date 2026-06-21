@@ -1,5 +1,7 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
+	import { goto } from '$app/navigation';
+	import { page } from '$app/state';
 	import { profile } from '$lib/data/profile';
 	import ThemeToggle from './ThemeToggle.svelte';
 	import Icon from './ui/Icon.svelte';
@@ -7,8 +9,8 @@
 	const links = [
 		{ label: 'Home', id: 'home' },
 		{ label: 'About', id: 'about' },
-		{ label: 'Skills', id: 'skills' },
 		{ label: 'Experience', id: 'experience' },
+		{ label: 'Skills', id: 'skills' },
 		{ label: 'Projects', id: 'projects' },
 		{ label: 'GitHub', id: 'github' },
 		{ label: 'Contact', id: 'contact' }
@@ -44,6 +46,11 @@
 
 	function go(id: string) {
 		menuOpen = false;
+		// Section IDs only exist on the home page; from other routes, navigate there first.
+		if (page.url.pathname !== '/') {
+			goto(id === 'home' ? '/' : `/#${id}`);
+			return;
+		}
 		document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
 	}
 </script>

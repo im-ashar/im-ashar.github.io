@@ -1,0 +1,35 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm --version)",
+      "Bash(git checkout *)",
+      "Bash(npx sv *)",
+      "Bash(mkdir -p _oldsite)",
+      "Bash(cp -r assets _oldsite/assets)",
+      "Bash(cp index.html _oldsite/index.html)",
+      "Bash(mkdir -p static/projects/aichatpdf static/projects/mkidz static/projects/moviesmafia static/projects/musicmafia static/img)",
+      "Bash(cp _oldsite/assets/img/portfolio/aichatpdf.png static/projects/aichatpdf/cover.png)",
+      "Bash(cp _oldsite/assets/img/portfolio/mkidz.png static/projects/mkidz/cover.png)",
+      "Bash(cp _oldsite/assets/img/portfolio/moviesmafia.jpg static/projects/moviesmafia/cover.jpg)",
+      "Bash(cp _oldsite/assets/img/portfolio/musicmafia.png static/projects/musicmafia/cover.png)",
+      "Bash(npm pkg *)",
+      "Bash(npm install *)",
+      "Bash(node -e \"const p=require\\('./package.json'\\);console.log\\(JSON.stringify\\({dep:p.dependencies,dev:p.devDependencies},null,2\\)\\)\")",
+      "Bash(npm run *)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" http://localhost:5179/)",
+      "Bash(curl -s http://localhost:5179/)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" http://localhost:5179/api/github)",
+      "Bash(curl -s -X POST http://localhost:5179/api/contact -H 'content-type: application/json' -d '{\"name\":\"a\",\"email\":\"bad\",\"message\":\"x\"}')",
+      "Bash(curl -s http://localhost:5179/api/github)",
+      "Bash(curl -s -X POST http://localhost:5179/api/contact -H 'content-type: application/json' -d '{\"name\":\"Bot\",\"email\":\"b@b.com\",\"message\":\"spam message here\",\"company\":\"x\"}')",
+      "Bash(curl -s -X POST http://localhost:5179/api/contact -H 'content-type: application/json' -d '{\"name\":\"Real Person\",\"email\":\"real@example.com\",\"message\":\"This is a genuine ten-plus char message.\"}')",
+      "Bash(cat /tmp/dev.log | grep -iE \"error|warn|fail\" | head -20 || echo \"no errors/warnings in dev log\")",
+      "Read(//tmp/**)",
+      "Bash(pkill -f \"vite dev\")",
+      "Bash(git add *)",
+      "Bash(git reset *)",
+      "Bash(curl -s http://localhost:5180/)",
+      "Bash(curl -s http://localhost:5180/projects)"
+    ]
+  }
+}

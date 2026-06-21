@@ -5,7 +5,7 @@ import type { UpworkProfile } from '$lib/types';
  * Update the values below to match your live Upwork profile.
  */
 export const upwork: UpworkProfile = {
-	profileUrl: 'https://www.upwork.com/freelancers/~imashar',
+	profileUrl: 'https://www.upwork.com/freelancers/~01d3e02810a3244d32',
 	title: 'Top Rated Software Engineer',
 	stats: [
 		{ label: 'Job Success', value: '100%' },

@@ -55,10 +55,10 @@
 			geometry.setAttribute('position', new THREE.BufferAttribute(positions, 3));
 			geometry.setAttribute('color', new THREE.BufferAttribute(colors, 3));
 			const material = new THREE.PointsMaterial({
-				size: 0.05,
+				size: 0.045,
 				vertexColors: true,
 				transparent: true,
-				opacity: 0.9,
+				opacity: 0.45,
 				depthWrite: false,
 				blending: THREE.AdditiveBlending
 			});

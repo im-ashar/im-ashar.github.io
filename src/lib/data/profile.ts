@@ -2,18 +2,18 @@ import type { Profile } from '$lib/types';
 
 export const profile: Profile = {
 	name: 'Muhammad Ashar',
-	title: 'Senior Software Engineer',
+	title: 'Sr. Software Engineer',
 	roles: [
-		'Senior Software Engineer',
-		'Full-Stack Developer',
+		'Sr. Software Engineer',
 		'.NET & Cloud Specialist',
+		'Full-Stack Developer',
 		'AI Application Builder'
 	],
 	tagline: '</> Declare Variables, Not War </>',
-	bio: `Senior Software Engineer with several years of experience designing and shipping
-production web applications end to end. I work across the stack — from crafting clean,
-accessible front-ends to architecting scalable APIs, databases, and cloud deployments.
-I care about performance, developer experience, and building products people actually enjoy using.`,
+	bio: `Sr. Software Engineer with 4+ years of experience, specializing in .NET, Artificial
+Intelligence (AI), and cloud technologies, with a strong background in building scalable
+enterprise applications and reusable component libraries. Skilled in full-stack development,
+system design, DevOps, and performance optimization across AWS and Azure environments.`,
 	location: 'Lahore, Pakistan',
 	email: 'muhammadashar401@gmail.com',
 	phone: '+92-309-4394150',
@@ -22,9 +22,9 @@ I care about performance, developer experience, and building products people act
 	resumePath: '/resume.pdf',
 	social: [
 		{ label: 'GitHub', href: 'https://github.com/im-ashar', icon: 'github' },
-		{ label: 'LinkedIn', href: 'https://www.linkedin.com/in/imashar/', icon: 'linkedin' },
-		{ label: 'Upwork', href: 'https://www.upwork.com/freelancers/~imashar', icon: 'upwork' },
-		{ label: 'Instagram', href: 'https://www.instagram.com/i.m.ashar', icon: 'instagram' },
+		{ label: 'LinkedIn', href: 'https://www.linkedin.com/in/ashardev/', icon: 'linkedin' },
+		{ label: 'Upwork', href: 'https://www.upwork.com/freelancers/~01d3e02810a3244d32', icon: 'upwork' },
+		{ label: 'Instagram', href: 'https://www.instagram.com/ashar.dev', icon: 'instagram' },
 		{ label: 'WhatsApp', href: 'https://wa.me/923094394150', icon: 'whatsapp' },
 		{ label: 'Email', href: 'mailto:muhammadashar401@gmail.com', icon: 'mail' }
 	]

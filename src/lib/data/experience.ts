@@ -2,45 +2,58 @@ import type { Experience } from '$lib/types';
 
 /**
  * Work history, newest first. Edit here to update the timeline.
- * Placeholder content — replace with real roles, companies, and dates.
  */
 export const experience: Experience[] = [
 	{
-		role: 'Senior Software Engineer',
-		company: 'Your Company',
-		location: 'Remote',
-		start: '2023',
+		role: 'Sr. Software Engineer',
+		company: 'Strategic Systems International',
+		location: 'Lahore, Pakistan',
+		start: '03/2026',
 		end: 'Present',
 		highlights: [
-			'Lead development of production web applications across the full stack.',
-			'Architect scalable APIs and cloud infrastructure for high-traffic services.',
-			'Mentor junior engineers and drive code-quality and review standards.'
+			'Built an automated weekly PDF reporting module using .NET Web APIs and React to deliver customized client insights.',
+			'Optimized system performance and scalability by offloading intensive report-rendering tasks to serverless Lambda functions.',
+			'Implemented efficient background jobs to aggregate complex datasets without degrading core application responsiveness.'
 		],
-		tech: ['ASP.NET Core', 'TypeScript', 'Azure', 'SvelteKit']
+		tech: ['.NET Web API', 'React', 'AWS Lambda']
 	},
 	{
 		role: 'Software Engineer',
-		company: 'Previous Company',
+		company: 'CodeNinja',
 		location: 'Lahore, Pakistan',
-		start: '2021',
-		end: '2023',
+		start: '09/2024',
+		end: '02/2026',
 		highlights: [
-			'Built and maintained C# / .NET MVC web applications.',
-			'Implemented authentication, authorization, and data-access layers.',
-			'Integrated third-party web services and REST APIs.'
+			'Developed and optimized backend services using .NET Web API and Azure, ensuring high performance and scalability.',
+			'Designed and maintained the front end with React and TypeScript, enhancing the user experience with responsive, intuitive interfaces.',
+			'Improved system reliability and functionality by debugging and resolving issues across the full stack.'
 		],
-		tech: ['C#', '.NET MVC', 'SQL Server', 'JavaScript']
+		tech: ['.NET Web API', 'Azure', 'React', 'TypeScript']
 	},
 	{
-		role: 'Freelance Developer',
-		company: 'Upwork',
-		location: 'Remote',
-		start: '2020',
-		end: 'Present',
+		role: 'Associate Software Engineer',
+		company: 'Autymate LLC',
+		location: 'Lahore, Pakistan',
+		start: '09/2023',
+		end: '09/2024',
 		highlights: [
-			'Delivered web and AI projects for international clients.',
-			'Maintained a strong Job Success Score across completed contracts.'
+			'Developed robust backend systems using .NET, ensuring reliability and scalability for accounting workflows.',
+			'Implemented Azure cloud solutions, optimizing data storage, processing, and application performance.',
+			'Built dynamic and user-friendly front-end interfaces with Angular, enhancing user engagement and usability.'
 		],
-		tech: ['C#', 'React', 'Node.js', 'AI / LLMs']
+		tech: ['.NET', 'Azure', 'Angular']
+	},
+	{
+		role: '.NET Developer (Freelancer)',
+		company: 'Upwork',
+		location: 'California, United States',
+		start: '05/2021',
+		end: '08/2023',
+		highlights: [
+			'Delivered multiple projects across diverse domains, showcasing expertise in .NET development and front-end technologies.',
+			'Collaborated with clients to gather requirements, propose solutions, and ensure successful project execution.',
+			'Ensured timely delivery by managing project timelines and meeting critical deadlines.'
+		],
+		tech: ['.NET', 'C#', 'JavaScript']
 	}
 ];

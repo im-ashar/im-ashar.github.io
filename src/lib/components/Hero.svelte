@@ -43,6 +43,13 @@
 		<HeroCanvas />
 	</div>
 
+	<!-- Readability scrim: keeps text legible over the particle field -->
+	<div
+		class="pointer-events-none absolute inset-0 -z-[4]"
+		style="background: radial-gradient(120% 90% at 25% 45%, var(--surface) 0%, color-mix(in srgb, var(--surface) 70%, transparent) 45%, transparent 75%)"
+		aria-hidden="true"
+	></div>
+
 	<div class="mx-auto w-full max-w-6xl px-4 sm:px-6">
 		<div class="max-w-3xl">
 			<p bind:this={intro} class="mb-4 inline-flex items-center gap-2 text-sm font-medium">

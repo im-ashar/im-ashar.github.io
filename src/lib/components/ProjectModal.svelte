@@ -118,6 +118,16 @@
 								rel="noopener noreferrer"
 								class="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-brand-500 to-accent-500 px-5 py-2.5 text-sm font-medium text-white transition hover:scale-105"
 							>
+								Live Site <Icon name="external" size={16} />
+							</a>
+						{/if}
+						{#if project.links.demo}
+							<a
+								href={project.links.demo}
+								target="_blank"
+								rel="noopener noreferrer"
+								class="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-brand-500 to-accent-500 px-5 py-2.5 text-sm font-medium text-white transition hover:scale-105"
+							>
 								Live Demo <Icon name="external" size={16} />
 							</a>
 						{/if}
