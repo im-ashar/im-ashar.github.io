@@ -14,5 +14,10 @@ export default defineConfig({
 			},
 			adapter: adapter({ edge: false })
 		})
-	]
+	],
+	ssr: {
+		// gsap (and three) ship ESM without "type": "module"; leaving them external
+		// makes the Netlify Lambda require() an ESM file and crash. Bundle them instead.
+		noExternal: ['gsap', 'three']
+	}
 });
