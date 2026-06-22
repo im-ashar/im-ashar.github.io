@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
+	import { slide } from 'svelte/transition';
 	import { goto } from '$app/navigation';
 	import { page } from '$app/state';
 	import { profile } from '$lib/data/profile';
@@ -38,8 +39,17 @@
 			if (el) observer.observe(el);
 		}
 
+		// Close the mobile menu when resizing up to desktop or pressing Escape.
+		const mq = window.matchMedia('(min-width: 1024px)');
+		const onMq = () => mq.matches && (menuOpen = false);
+		mq.addEventListener('change', onMq);
+		const onKey = (e: KeyboardEvent) => e.key === 'Escape' && (menuOpen = false);
+		window.addEventListener('keydown', onKey);
+
 		return () => {
 			window.removeEventListener('scroll', onScroll);
+			window.removeEventListener('keydown', onKey);
+			mq.removeEventListener('change', onMq);
 			observer.disconnect();
 		};
 	});
@@ -107,7 +117,7 @@
 
 	<!-- Mobile menu -->
 	{#if menuOpen}
-		<div class="glass mx-4 mt-3 rounded-2xl p-2 lg:hidden">
+		<div class="glass mx-4 mt-3 rounded-2xl p-2 lg:hidden" transition:slide={{ duration: 200 }}>
 			<ul class="flex flex-col">
 				{#each links as link (link.id)}
 					<li>

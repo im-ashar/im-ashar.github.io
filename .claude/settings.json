@@ -29,7 +29,14 @@
       "Bash(git add *)",
       "Bash(git reset *)",
       "Bash(curl -s http://localhost:5180/)",
-      "Bash(curl -s http://localhost:5180/projects)"
+      "Bash(curl -s http://localhost:5180/projects)",
+      "Bash(curl -s -o /dev/null -w \"dev server: %{http_code}\\\\n\" http://localhost:5191/)",
+      "Bash(node verify.mjs)",
+      "Bash(curl -s -o /dev/null -w \"api/github: %{http_code}\\\\n\" http://localhost:5191/api/github)",
+      "Bash(node findoverflow.mjs)",
+      "Bash(node pagewidth.mjs)",
+      "Read(//tmp/shots/**)",
+      "Read(//c/tmp/shots/**)"
     ]
   }
 }

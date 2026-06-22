@@ -37,7 +37,10 @@
 	});
 </script>
 
-<section id="home" class="relative flex min-h-screen items-center overflow-hidden pt-24 pb-12">
+<section
+	id="home"
+	class="relative flex min-h-[100svh] items-center overflow-hidden pt-28 pb-16 sm:pt-24 sm:pb-12"
+>
 	<!-- 3D particle accent -->
 	<div class="absolute inset-0 -z-[5]">
 		<HeroCanvas />
@@ -62,9 +65,16 @@
 				<span style="color: var(--text-muted)">Available for work · {profile.location}</span>
 			</p>
 
-			<h1 bind:this={headline} class="font-display text-5xl font-bold leading-tight sm:text-7xl">
+			<h1
+				bind:this={headline}
+				class="font-display text-4xl font-bold leading-tight min-[400px]:text-5xl sm:text-6xl lg:text-7xl"
+			>
 				<span data-line class="block">Hi, I'm <GradientText>Muhammad Ashar</GradientText></span>
-				<span data-line class="mt-2 block text-2xl font-medium sm:text-3xl" style="color: var(--text-muted)">
+				<span
+					data-line
+					class="mt-2 block text-xl font-medium min-[400px]:text-2xl sm:text-3xl"
+					style="color: var(--text-muted)"
+				>
 					{#key displayRole}
 						<span class="inline-block animate-[float_0.6s_ease]">{displayRole}</span>
 					{/key}
@@ -76,15 +86,15 @@
 				scalable cloud back-ends.
 			</p>
 
-			<div bind:this={cta} class="mt-8 flex flex-wrap items-center gap-4">
+			<div bind:this={cta} class="mt-8 flex flex-col gap-3 min-[400px]:flex-row min-[400px]:flex-wrap min-[400px]:items-center min-[400px]:gap-4">
 				<button
 					onclick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}
-					class="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-brand-500 to-accent-500 px-6 py-3 font-medium text-white shadow-lg shadow-brand-500/30 transition-all duration-300 hover:scale-105 hover:shadow-brand-500/50 active:scale-95"
+					class="inline-flex items-center justify-center gap-2 rounded-full bg-gradient-to-r from-brand-500 to-accent-500 px-6 py-3 font-medium text-white shadow-lg shadow-brand-500/30 transition-all duration-300 hover:scale-105 hover:shadow-brand-500/50 active:scale-95"
 				>
 					View Projects
 					<Icon name="arrow" size={18} />
 				</button>
-				<ResumeButton variant="ghost" />
+				<ResumeButton variant="ghost" class="justify-center" />
 			</div>
 
 			<div class="mt-10 flex items-center gap-3">

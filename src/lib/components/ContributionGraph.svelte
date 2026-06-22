@@ -15,8 +15,6 @@
 		'rgba(168,85,247,0.8)',
 		'rgba(217,70,239,1)'
 	];
-
-	const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
 </script>
 
 <div class="overflow-x-auto">

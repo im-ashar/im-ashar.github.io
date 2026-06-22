@@ -16,18 +16,16 @@
 
 		<div class="space-y-10">
 			{#each experience as job, i (job.company + job.start)}
-				<div
-					use:reveal={{ y: 40 }}
-					class="relative grid sm:grid-cols-2 sm:gap-8 {i % 2 === 0 ? '' : 'sm:[direction:rtl]'}"
-				>
+				{@const left = i % 2 === 0}
+				<div use:reveal={{ y: 40 }} class="relative sm:grid sm:grid-cols-2 sm:gap-8">
 					<!-- node dot -->
 					<div
-						class="absolute top-2 left-4 z-10 h-3 w-3 -translate-x-1/2 rounded-full bg-brand-500 ring-4 sm:left-1/2"
-						style="--tw-ring-color: var(--surface)"
+						class="absolute top-2 left-4 z-10 h-3 w-3 -translate-x-1/2 rounded-full bg-brand-500 sm:left-1/2"
+						style="box-shadow: 0 0 0 4px var(--surface)"
 					></div>
 
-					<div class="{i % 2 === 0 ? 'sm:text-right' : 'sm:col-start-2'} pl-10 sm:pl-0 [direction:ltr]">
-						<GlassCard class="p-6" hover>
+					<div class={left ? 'pl-10 sm:pr-0 sm:pl-0' : 'pl-10 sm:col-start-2 sm:pl-0'}>
+						<GlassCard class="p-5 sm:p-6" hover>
 							<span
 								class="inline-block rounded-full bg-brand-500/15 px-3 py-1 text-xs font-semibold text-brand-400"
 							>
@@ -41,13 +39,13 @@
 							</p>
 							<ul class="mt-3 space-y-1.5 text-sm" style="color: var(--text-muted)">
 								{#each job.highlights as h (h)}
-									<li class="flex gap-2 text-left">
+									<li class="flex gap-2">
 										<span class="mt-1.5 h-1 w-1 flex-shrink-0 rounded-full bg-accent-500"></span>
 										<span>{h}</span>
 									</li>
 								{/each}
 							</ul>
-							<div class="mt-4 flex flex-wrap gap-2 {i % 2 === 0 ? 'sm:justify-end' : ''}">
+							<div class="mt-4 flex flex-wrap gap-2">
 								{#each job.tech as t (t)}
 									<span
 										class="rounded-md px-2 py-0.5 text-xs"

@@ -82,7 +82,7 @@
 
 		<!-- contributions + languages -->
 		<div class="mt-6 grid gap-6 lg:grid-cols-[1.6fr_1fr]">
-			<div use:reveal={{ y: 30 }}>
+			<div use:reveal={{ y: 30 }} class="min-w-0">
 				<GlassCard class="p-6">
 					<h3 class="font-display mb-4 text-lg font-bold text-brand-400">Contributions</h3>
 					<ContributionGraph weeks={data.contributions.weeks} total={data.contributions.total} />
