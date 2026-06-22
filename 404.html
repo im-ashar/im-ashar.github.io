@@ -4,12 +4,10 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<title>Muhammad Ashar — Redirecting…</title>
-		<link rel="canonical" href="https://ashar-dev.netlify.app/" />
 		<meta name="robots" content="noindex" />
-		<!-- Instant client-side redirect -->
 		<meta http-equiv="refresh" content="0; url=https://ashar-dev.netlify.app/" />
 		<script>
-			// Preserve the path/hash/query when redirecting (e.g. /projects -> netlify /projects)
+			// Redirect any unknown GitHub Pages path to the same path on Netlify.
 			(function () {
 				var base = 'https://ashar-dev.netlify.app';
 				location.replace(base + location.pathname + location.search + location.hash);
