@@ -19,8 +19,8 @@ export const projects: Project[] = [
 GitHub that integrates reactive programming patterns into Blazor SSR applications to optimize
 state management and component performance.`,
 		tags: ['.NET', 'Blazor', 'Open Source'],
-		cover: '/projects/reactiveblazor/cover.png',
-		images: ['/projects/reactiveblazor/cover.png'],
+		cover: '/projects/reactiveblazor/cover.jpg',
+		images: ['/projects/reactiveblazor/cover.jpg'],
 		links: {demo:"https://reactive-blazor.runasp.net/",repo:"https://github.com/im-ashar/ReactiveBlazor"},
 		featured: true,
 		year: 2025
@@ -36,7 +36,7 @@ API's completion capabilities to provide intelligent, context-aware responses.`,
 		cover: '/projects/aichatpdf/cover.png',
 		images: ['/projects/aichatpdf/cover.png'],
 		links: {},
-		featured: true,
+		featured: false,
 		year: 2024
 	},
 	{
@@ -48,9 +48,10 @@ intuitive, feature-rich admin side for content management and administrative fun
 showcasing a commitment to staying current with the latest advancements in the Microsoft
 ecosystem.`,
 		tags: ['.NET', 'Blazor', 'Web App'],
-		cover: '/projects/blazingblog/cover.svg',
-		images: ['/projects/blazingblog/cover.svg'],
-		links: {},
+		cover: '/projects/blazingblog/cover.jpg',
+		images: ['/projects/blazingblog/cover.jpg','/projects/blazingblog/1.png','/projects/blazingblog/2.png','/projects/blazingblog/3.png'],
+		links: {live:"https://blazing-blog.runasp.net/",repo:"https://github.com/im-ashar/BlazingBlog"},
+		featured: true,
 		year: 2024
 	},
 	{
@@ -64,6 +65,7 @@ attendance tracking, and examination scheduling. Built with Angular and .NET.`,
 		cover: '/projects/edsys/cover.png',
 		images: ['/projects/edsys/cover.png','/projects/edsys/1.jpeg','/projects/edsys/2.jpeg','/projects/edsys/3.jpeg','/projects/edsys/4.jpeg'],
 		links: {repo:"https://github.com/im-ashar/EdSys"},
+		featured: true,
 		year: 2023
 	}
 ];
