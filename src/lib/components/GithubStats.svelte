@@ -62,7 +62,7 @@
 		<GlassCard class="p-8 text-center">
 			<p style="color: var(--text-muted)">
 				Couldn't load live GitHub data right now.
-				<a href="https://github.com/im-ashar" class="text-brand-400 underline" target="_blank" rel="noopener noreferrer">
+				<a href="https://github.com/ashar-builds" class="text-brand-400 underline" target="_blank" rel="noopener noreferrer">
 					Visit my GitHub profile →
 				</a>
 			</p>

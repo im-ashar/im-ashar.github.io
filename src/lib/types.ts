@@ -2,7 +2,7 @@ export interface SocialLink {
 	label: string;
 	href: string;
 	/** icon key resolved in the Icon component */
-	icon: 'github' | 'linkedin' | 'instagram' | 'whatsapp' | 'mail' | 'upwork';
+	icon: 'github' | 'linkedin' | 'instagram' | 'whatsapp' | 'mail' | 'upwork' | 'twitter';
 }
 
 export interface Profile {
